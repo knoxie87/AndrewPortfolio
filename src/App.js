@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import Home from './Home';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState } from 'react'
+import PreviousJobs from './Pages/PreviousEmployment';
+import Navbar from './Layout/Navbar';
+import Sidebar from './Layout/Sidebar';
+import Contact from './Pages/Contact';
 function App() {
+
+  const [displaySideBar, setSideBar] = useState(false)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+      <Navbar displayIcon={displaySideBar} setSideBar={() => setSideBar(!displaySideBar)} />
+        <div className="content flex flex-row">
+          <Routes>
+            <Route path="/" element={<Home displaySideBar = {displaySideBar} setSideBar={ () => setSideBar(!displaySideBar)}/>}>
+            </Route>
+            <Route path="/previousEmployment" element={<PreviousJobs/>}>
+            </Route>
+            <Route path="/contact" element={<Contact/>}>
+            </Route>
+          </Routes>
+          <Sidebar closeNavBar={() => setSideBar(!displaySideBar)} displaySideBar={displaySideBar} />
+        </div>
+      </div>
+    </Router>
   );
 }
 
