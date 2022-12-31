@@ -1,7 +1,7 @@
 import { List, ListItem, ListItemIcon } from "@mui/material"
-import GlassboxImage from "../assets/PreviousEmploymentImages/GlassBox.jfif"
-import FingermarkImage from "../assets/PreviousEmploymentImages/FingerMark.jfif"
-import BuildAndLiftImage from "../assets/PreviousEmploymentImages/BuildLiftLogo.png"
+import GlassboxImage from "../assets/Logo/GlassBox.jfif"
+import FingermarkImage from "../assets/Logo/FingerMark.jfif"
+import BuildAndLiftImage from "../assets/Logo/BuildLiftLogo.png"
 import { AiOutlineCaretRight } from "react-icons/ai"
 
 const PreviousJobs = () => {

@@ -16,11 +16,9 @@ const ImageCarousel = () => {
         setIndex(value);
       };
 
-
-
     return (
         <div>
-            <img className="h-40 object-cover w-full" style={{ filter: "contrast(40%) brightness(120%) grayscale(130%)" }} src={files[imageIndex]}></img>
+            <img className="h-40 w-full" style={{ filter: "contrast(40%) brightness(120%) grayscale(130%)" }} src={files[imageIndex]}></img>
             <div>
                 <Pagination className="flex justify-center justify-items-center" count={3} init page={imageIndex + 1} onChange={handleChange}></Pagination>
             </div>
