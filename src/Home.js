@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { downloadProfileImage } from './Firebase'
 import React from 'react'
 import ImageCarousel from "./Components/ImageCarousel";
 import Zoom from '@mui/material/Zoom';
@@ -15,25 +14,6 @@ import { AiOutlineConsoleSql } from "react-icons/ai"
 import ASPImage from './assets/ASP.net.jpg'
 import { styled } from "@mui/material";
 const Home = () => {
-
-	const [file, setFile] = useState([]);
-	const [refresh, setRefresh] = useState([]);
-
-	useEffect(() => {
-		async function getData() {
-			// You can await here
-			// const file = await fetchData();
-			console.log('test')
-			setFile(file)
-		}
-		getData();
-	}, [refresh])
-
-	const fetchData = async () => {
-		// const file = await downloadProfileImage();
-		return file
-	}
-
 	return (
 		<div className="App overflow-hidden">
 			<div className="w-full flex justify-center items-center">
