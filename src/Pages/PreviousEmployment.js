@@ -8,11 +8,11 @@ const PreviousJobs = () => {
     return (
         <div className="w-full flex justify-center">
 
-            <div className="flex gap-20 w-full flex-col sm:w-1/2">
+            <div className="flex gap-20 flex-col w-5/6 sm:w-1/2">
 
-                <div className="flex mt-10 flex-row">
+                <div className="flex mt-10 sm:gap-0 gap-2 sm:flex-row flex-col ">
                     <div className="flex items-center h-full">
-                        <img className=" w-60" src={GlassboxImage}></img>
+                        <img className=" sm:w-60 w-40" src={GlassboxImage}></img>
                     </div>
                     <div className="w-full">
                         <h5>Junior Developer at Glassbox</h5>
@@ -59,9 +59,9 @@ const PreviousJobs = () => {
                         </List>
                     </div>
                 </div>
-                <div className="flex flex-row">
+                <div className="flex sm:flex-row sm:gap-0 gap-2 flex-col">
                     <div className="flex items-center h-full">
-                        <img className=" w-60" src={FingermarkImage}></img>
+                        <img className=" sm:w-60 w-40" src={FingermarkImage}></img>
                     </div>
                     <div className="w-full">
                         <h5>Intern Developer at Fingermark</h5>
@@ -95,9 +95,9 @@ const PreviousJobs = () => {
                         </List>
                     </div>
                 </div>
-                <div className="flex flex-row">
+                <div className="flex sm:flex-row sm:gap-0 gap-2 flex-col">
                     <div className="flex items-center h-full">
-                        <img className=" w-60" src={BuildAndLiftImage}></img>
+                        <img className=" sm:w-60 w-40" src={BuildAndLiftImage}></img>
                     </div>
                     <div className="w-full">
                         <h5>Build and Lift Website Project</h5>

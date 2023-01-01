@@ -4,12 +4,9 @@ import BuildLift from "../assets/PreviousEmploymentImages/buildLift.png"
 import GlassBox from "../assets/PreviousEmploymentImages/Glassbox.png"
 import FingerMark from "../assets/PreviousEmploymentImages/fingermark.jpg"
 const ImageCarousel = () => {
-
-
     const [files, setFiles] = useState([BuildLift,GlassBox,FingerMark]);
     let [imageIndex, setIndex] = useState(0);
 
-    
     const handleChange = (event, value) => {
         value--;
         console.log(value)
