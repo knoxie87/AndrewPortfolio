@@ -5,7 +5,7 @@ import GlassBox from "../assets/PreviousEmploymentImages/Glassbox.png"
 import FingerMark from "../assets/PreviousEmploymentImages/fingermark.jpg"
 const ImageCarousel = () => {
     const [files, setFiles] = useState([BuildLift,GlassBox,FingerMark]);
-    let [imageIndex, setIndex] = useState(0);
+    let [imageIndex, setIndex] = useState(2);
 
     const handleChange = (event, value) => {
         value--;
