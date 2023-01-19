@@ -9,7 +9,6 @@ const ImageCarousel = () => {
 
     const handleChange = (event, value) => {
         value--;
-        console.log(value)
         setIndex(value);
       };
 
