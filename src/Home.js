@@ -18,7 +18,7 @@ const Home = () => {
 		<div className="App overflow-hidden">
 			<div className="w-full flex justify-center items-center">
 
-				<div className="flex flex-col gap-10 w-5/6  sm:w-1/2">
+				<div className="flex flex-col gap-10 w-5/6 2xl:w-2/5 sm:w-1/2">
 
 					<div className="flex flex-col sm:flex-row gap-14">
 						<div>
