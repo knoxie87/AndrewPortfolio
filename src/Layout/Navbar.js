@@ -8,7 +8,7 @@ const Navbar = (props) => {
             <nav className="p-5 pl-2 z-40 flex justify-between bg-gray-100">
                 <h1 className='h-full text-lg w-32 font-light'>Andrew Knox Portfolio</h1>
                 <div className='flex gap-3 flex-row items-center justify-center'>
-                    <button onClick={() => { props.setSideBar() }} className='fa-2x border p-2 border-solid'>
+                    <button aria-label="Navigation" onClick={() => { props.setSideBar() }} className='fa-2x border p-2 border-solid'>
                         {props.displayIcon == false ?
                             <FaBars className=" text-2xl" /> : <AiOutlineClose className=" text-2xl"/>}
                     </button>

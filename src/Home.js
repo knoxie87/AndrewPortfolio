@@ -41,7 +41,7 @@ const Home = () => {
 								</ListItem>
 								<ListItem style={{ padding: 0 }}>
 									<ListItemIcon>
-										<FaReact className=" text-4xl" />
+										<FaReact className=" c" />
 									</ListItemIcon>
 									<ListItemText primary="React" />
 								</ListItem>

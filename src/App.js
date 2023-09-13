@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home displaySideBar = {displaySideBar} setSideBar={ () => setSideBar(!displaySideBar)}/>}>
             </Route>
-            <Route path="/previousEmployment" element={<PreviousJobs/>}>
+            <Route path="/experience" element={<PreviousJobs/>}>
             </Route>
             <Route path="/contact" element={<Contact/>}>
             </Route>
