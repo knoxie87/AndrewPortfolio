@@ -7,7 +7,6 @@ const Contact = () => {
             <div className="flex gap-10 flex-col w-5/6 sm:w-1/2">
                 <h3 className="mt-10">Contact</h3>
                 <p className="text-xl flex flex-col gap-2">
-                    <span>Email: andrew.knox87@gmail.com</span>
                     <span><a className="flex gap-2" href="https://www.linkedin.com/in/andrew-knox-4053761a1/">Linkedin Profile <FaLinkedin className=" text-4xl"/></a></span>
                     <span><a className="flex gap-2" href="https://github.com/knoxie87">Github Profile <FaGithub className=" text-4xl" /> </a></span>
                 </p>
